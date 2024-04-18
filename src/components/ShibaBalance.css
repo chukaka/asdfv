@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+.shiba-balance {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    /* Чтобы контейнер подстраивался под размер его содержимого */
+}
+
+.shiba-balance img {
+    display: block;
+    width: 100%;
+    /* Занимает всю ширину контейнера */
+    height: auto;
+    /* Сохраняем пропорции */
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    /* Положение по вертикали в середине */
+    left: 50%;
+    /* Положение по горизонтали в середине */
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    /* Выравнивание элементов по вертикали */
+}
+
+.text span {
+    font-size: 50px;
+    /* Размер текста */
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* Жирный шрифт */
+    color: #ffffff;
+    /* Цвет текста */
+}
+
+.text img {
+    width: 30px;
+    /* Размер маленькой картинки (фавикон) */
+    margin-left: 5px;
+    /* Отступ между текстом и маленькой картинкой */
+}

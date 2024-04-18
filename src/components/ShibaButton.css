@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.shiba-button {
+    display: inline-block;
+    position: relative;
+    /* Устанавливаем позиционирование относительно родительского элемента */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    user-select: none;
+}
+
+.shiba-button img {
+    width: 100%;
+    /* Здесь можно установить нужные размеры изображения */
+    height: auto;
+    /* Сохраняем пропорции */
+}
+
+.shiba-button span {
+    position: absolute;
+    /* Устанавливаем абсолютное позиционирование */
+    top: 50%;
+    /* Размещаем текст по вертикали посередине кнопки */
+    left: 50%;
+    /* Размещаем текст по горизонтали посередине кнопки */
+    transform: translate(-50%, -50%);
+    /* Центрируем текст по центру кнопки */
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+
+    color: #000000;
+    /* Цвет текста */
+}

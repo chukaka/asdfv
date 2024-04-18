@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+body,html, #root {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  /* Запрет выделения при долгом нажатии на мобильных устройствах */
+  -webkit-user-select: none;
+  /* Запрет выбора текста на веб-сайте */
+  -khtml-user-select: none;
+  /* Запрет выбора текста на веб-сайте */
+  -moz-user-select: none;
+  /* Запрет выбора текста на веб-сайте */
+  -ms-user-select: none;
+  /* Запрет выбора текста на веб-сайте */
+  user-select: none;
+  height: 100%; /* Устанавливаем высоту на 100% для корневого элемента и body */
+  margin: 0; /* Убираем отступы */
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  background-image: url('./IMG_0145.JPG');
+  background-size: cover; 
+  background-repeat: no-repeat; 
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  align-items: center; /* Центрируем содержимое по вертикали */
+  height: 100vh; 
+
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column; /* Располагаем элементы в колонку */
+  justify-content: flex-start; /* Выравниваем их по верхнему краю */
+  max-width: 100%; /* Максимальная ширина 80% */
+  height: 100%; /* Занимаем всю доступную высоту */
+}
+
+.component-container1 {
+  flex: 1;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  align-items: center; /* Центрируем содержимое по вертикали */
+}
+
+.component-container2 {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  align-items: center; /* Центрируем содержимое по вертикали */
+}
+.component-container3 {
+  flex: 1;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent; /* Отключает подсветку при нажатии на iOS и Android */
 }
 
-.App-link {
-  color: #61dafb;
+.instruction-screen {
+  position: fixed; /* Фиксируем позицию элемента */
+  top: 50%; /* Размещаем по середине вертикали */
+  left: 50%; /* Размещаем по середине горизонтали */
+  transform: translate(-50%, -50%); /* Центрируем по центру экрана */
+  width: 80%; /* Занимаем 80% ширины экрана */
+  height: auto; /* Автоматически подстраиваем высоту */
+  display: flex; /* Размещаем содержимое по центру */
+  justify-content: center; /* Выравниваем содержимое по центру по горизонтали */
+  align-items: center; /* Выравниваем содержимое по центру по вертикали */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.instruction-screen img {
+  max-width: 100%; /* Устанавливаем максимальную ширину изображения */
+  max-height: 100%; /* Устанавливаем максимальную высоту изображения */
+  width: auto; /* Автоматически подстраиваем ширину изображения */
+  height: auto; /* Автоматически подстраиваем высоту изображения */
 }

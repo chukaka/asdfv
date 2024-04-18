@@ -1,0 +1,53 @@
+.coin-container {
+    position: relative;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+  }
+  
+  .coin {
+    width: 100%;
+    transition: transform 1s;
+  }
+  
+  .coin img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .emoji {
+    position: absolute;
+    font-size: 45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: flyAway 2s forwards;
+  }
+  
+  @keyframes flyAway {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) translateX(var(--x)) translateY(var(--y));
+    }
+  }
+  
+  /* Генерируем разные направления для каждого эмоджи */
+  .emoji-0 { --x: -100px; --y: -100px; }
+  .emoji-1 { --x: 100px; --y: -100px; }
+  .emoji-2 { --x: -100px; --y: 100px; }
+  .emoji-3 { --x: 100px; --y: 100px; }
+  .emoji-4 { --x: -150px; --y: 0; }
+  .emoji-5 { --x: 150px; --y: 0; }
+  .emoji-6 { --x: 0; --y: -150px; }
+  .emoji-7 { --x: 0; --y: 150px; }
+  .emoji-8 { --x: -200px; --y: -50px; }
+  .emoji-9 { --x: 200px; --y: -50px; }
+  .emoji-10 { --x: -50px; --y: 200px; }
+  .emoji-11 { --x: 50px; --y: 200px; }

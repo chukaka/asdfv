@@ -1,0 +1,38 @@
+.disable-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .disable {
+    width: 300%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .disable img {
+    width: 100%; 
+    height: auto; 
+    transform: scale(1.3); /* Увеличиваем размер изображения в 3 раза */
+    transform-origin: center; /* Устанавливаем точку преобразования в центре изображения */
+  }
+  
+  
+  
+  
+  
+  /* Добавим анимацию потрясывания */
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  .shake {
+    animation: shake 0.4s ease-in-out;
+  }
+  
