@@ -13,7 +13,8 @@ function App() {
   const [loading, setLoading] = useState(true); // Состояние загрузки
   const [showInstructions, setShowInstructions] = useState(false);
   const userId = window.Telegram.WebApp.initDataUnsafe.user.id; // Определение userId
-
+  window.Telegram.WebApp.expand();
+  
   useEffect(() => {
     window.Telegram.WebApp.expand();
     const storedValue = localStorage.getItem("promoValue"); // Проверяем, есть ли значение в локальном хранилище
