@@ -15,6 +15,7 @@ function App() {
   const userId = window.Telegram.WebApp.initDataUnsafe.user.id; // Определение userId
 
   useEffect(() => {
+    window.Telegram.WebApp.expand();
     const storedValue = localStorage.getItem("promoValue"); // Проверяем, есть ли значение в локальном хранилище
     if (!storedValue) {
       setShowInstructions(true); // Если значения нет, показываем инструкции
